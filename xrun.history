@@ -1,0 +1,3 @@
+s1(25Feb2026:11:46:55):  xrun -sv -access +rwc -gui design_clock.sv interface_clock.sv program_clock.sv top.sv 
+s2(25Feb2026:11:51:54):  xrun -sv -access +rwc -gui design_clock.sv interface_clock.sv program_clock.sv top.sv 
+s3(25Feb2026:12:02:16):  xrun -sv -access +rwc -gui -coverage all design_clock.sv interface_clock.sv program_clock.sv top.sv 

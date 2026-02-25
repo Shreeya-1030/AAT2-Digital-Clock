@@ -1,0 +1,88 @@
+ncverilog(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	ncverilog	15.20-s086: Started on Feb 25, 2026 at 12:14:03 IST
+ncverilog
+	+access+r
+	+sv
+	+nccoverage+all
+	-covoverwrite
+	digital_clock.sv
+	clock_interface.sv
+	clock_test.sv
+	clock_tb.sv
+file: digital_clock.sv
+	module worklib.digital_clock:sv
+		errors: 0, warnings: 0
+file: clock_interface.sv
+	interface worklib.clock_if:sv
+		errors: 0, warnings: 0
+file: clock_test.sv
+	program worklib.clock_test:sv
+		errors: 0, warnings: 0
+file: clock_tb.sv
+	module worklib.clock_tb:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+
+	Extracting FSMs for coverage:
+		worklib.digital_clock
+		worklib.clock_test
+		worklib.clock_tb
+	Total FSMs extracted = 0
+	Building instance overlay tables: .................... Done
+	Enabling instrumentation for coverage types: block expression FSM toggle functional
+ncelab: *W,COVDCL: By default expression coverage is scored only for Verilog logical operators (|| and &&) and VHDL logical operators (OR, AND, NOR, and NAND), and is scored only in condition expressions. To score coverage for other operators and for expressions in other statements, use the "set_expr_coverable_operators" and "set_expr_coverable_statements" coverage configuration file commands with suitable options at elaboration.
+	Generating native compiled code:
+		worklib.clock_tb:sv <0x15737749>
+			streams:   6, words:  2623
+		worklib.clock_test:sv <0x59c7684f>
+			streams:  13, words: 14393
+		worklib.digital_clock:sv <0x40f726b0>
+			streams:   3, words:  1626
+	Building instance specific data structures.
+ncelab: *W,CGPIDF: Covergroup "per_instance" option , by default, is set as 0.
+ncelab: *N,COVCGN: Coverage configuration file command "set_covergroup -new_instance_reporting" can be specified to improve the scoping and naming of covergroup instances. It may be noted that subsequent merging of a coverage database saved with this command and a coverage database saved without this command is not allowed.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 2       2
+		Interfaces:              1       1
+		Programs:                1       1
+		Registers:              10      10
+		Scalar wires:            2       -
+		Vectored wires:          4       -
+		Named events:            2       2
+		Always blocks:           7       7
+		Initial blocks:          6       6
+		Pseudo assignments:      4       4
+		Assertions:              2       2
+		Covergroup Instances:    0       1
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: worklib.clock_tb:sv
+Loading snapshot worklib.clock_tb:sv .................... Done
+ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+ncsim> source /opt/cadence/installs/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> run
+ncsim: *E,ASRTST (./clock_test.sv,35): (time 5 NS) Assertion clock_tb.test.min_limit has failed
+Minutes exceeded 59!
+ncsim: *E,ASRTST (./clock_test.sv,32): (time 5 NS) Assertion clock_tb.test.sec_limit has failed
+Seconds exceeded 59!
+Simulation Completed Successfully.
+Simulation complete via $finish(1) at time 39035 NS + 5
+./clock_test.sv:51         $finish;
+ncsim> exit
+ncsim: *N,COVCGN: Coverage configuration file command "set_covergroup -new_instance_reporting" can be specified to improve the scoping and naming of covergroup instances. It may be noted that subsequent merging of a coverage database saved with this command and a coverage database saved without this command is not allowed.
+ncsim: *W,CGPIZE: Instance coverage for covergroup instance "coverage_inst" will not be dumped to database as per_instance option value is set to 0:./clock_test.sv, 21.
+
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  clock_tb(clock_tb)
+  scope    :  scope
+  testname :  test
+
+coverage files:
+  model(design data) :  ./cov_work/scope/icc_77cfd3ae_7a21e4db.ucm
+  data               :  ./cov_work/scope/test/icc_77cfd3ae_7a21e4db.ucd
+TOOL:	ncverilog	15.20-s086: Exiting on Feb 25, 2026 at 12:14:05 IST  (total: 00:00:02)

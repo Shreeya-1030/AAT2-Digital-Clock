@@ -1,0 +1,17 @@
+s1(25Feb2026:11:21:04):  ncverilog +access+r +sv +nccoverage+all design.sv interface.sv program.sv top.sv 
+s2(25Feb2026:11:22:30):  ncverilog +access+r +sv +nccoverage+all design.sv interface.sv program.sv top.sv 
+s3(25Feb2026:11:22:44):  ncverilog +access+r +sv +nccoverage+all design.sv interface.sv program.sv top.sv 
+s4(25Feb2026:11:24:02):  ncverilog +access+r +sv +nccoverage+all design.sv interface.sv program.sv top.sv 
+s5(25Feb2026:11:24:30):  ncverilog +access+r +sv +nccoverage+all design.sv interface.sv program.sv top.sv 
+s6(25Feb2026:11:25:26):  ncverilog +access+r +sv +nccoverage+all design.sv interface.sv program.sv top.sv 
+s7(25Feb2026:11:26:37):  ncverilog +access+r +sv +nccoverage+all design.sv interface.sv program.sv top.sv 
+s8(25Feb2026:11:27:01):  ncverilog +access+r +sv +nccoverage+all design.sv interface.sv program.sv top.sv 
+s9(25Feb2026:11:28:12):  ncverilog +access+r +sv +nccoverage+all design.sv interface.sv program.sv top.sv 
+s10(25Feb2026:11:30:15):  ncverilog +access+r +sv +nccoverage+all design_clock.sv interface_clock.sv program_clock.sv top.sv 
+s11(25Feb2026:11:33:58):  ncverilog +access+r +sv +nccoverage+all design_clock.sv interface_clock.sv program_clock.sv top.sv 
+s12(25Feb2026:11:37:30):  ncverilog +access+r +sv +nccoverage+all design_clock.sv interface_clock.sv program_clock.sv top.sv 
+s13(25Feb2026:11:40:57):  ncverilog +access+r +sv +nccoverage+all covoverwrite design_clock.sv interface_clock.sv program_clock.sv top.sv 
+s14(25Feb2026:11:41:27):  ncverilog +access+r +sv +nccoverage+all -covoverwrite design_clock.sv interface_clock.sv program_clock.sv top.sv 
+s15(25Feb2026:11:57:21):  ncverilog +access+r +sv +nccoverage+all -covoverwrite design_clock.sv interface_clock.sv program_clock.sv top.sv 
+s16(25Feb2026:11:58:40):  ncverilog +access+r +sv +nccoverage+all -covoverwrite design_clock.sv interface_clock.sv program_clock.sv top.sv 
+s17(25Feb2026:12:14:03):  ncverilog +access+r +sv +nccoverage+all -covoverwrite digital_clock.sv clock_interface.sv clock_test.sv clock_tb.sv 

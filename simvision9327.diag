@@ -1,0 +1,88 @@
+*** Message Type: info ***
+When: Wed Feb 25 12:02:19 IST 2026
+SimVision started.
+Version: TOOL:  simvision(64)   20.09-s012
+User: student
+Host: ECE.bmsce.ac.in
+Platform: Linux/x86_64/3.10.0-1160.119.1.el7.x86_64
+Started: Wed Feb 25 12:02:19 IST 2026
+Command: /opt/cadence/installs/XCELIUM2009/tools.lnx86/simvision/bin/64bit/simvision.exe -connect dc:ECE.bmsce.ac.in:35664 -64BIT -nocopyright
+Work Directory: /home/student/cadWorkDir/myProjects/Digital/1BM23EC249/AAT2
+ 
+*** Message Type: info ***
+When: Wed Feb 25 12:02:19 IST 2026
+Create browser window: "Design Browser 1"
+ 
+*** Message Type: info ***
+When: Wed Feb 25 12:02:20 IST 2026
+Create console window: "Console"
+ 
+*** Message Type: info ***
+When: Wed Feb 25 12:02:20 IST 2026
+Connect to Simulator
+      Design: worklib.clock_tb:sv
+   Languages: verilog assertion
+   Simulator: XM-Sim
+     Version: TOOL:      xmsim(64)       20.09-s012
+        User: student
+        Host: ECE.bmsce.ac.in
+Time Started: Wed Feb 25 12:02:17 IST 2026
+  Process ID: 9270
+   Directory: /home/student/cadWorkDir/myProjects/Digital/1BM23EC249/AAT2
+     Command: xrun -sv -access +rwc -gui -coverage all design_clock.sv interface_clock.sv program_clock.sv top.sv
+
+ 
+*** Message Type: info ***
+When: Wed Feb 25 12:02:21 IST 2026
+Create utility window: "Properties"
+ 
+*** Message Type: info ***
+When: Wed Feb 25 12:04:27 IST 2026
+Delete browser window: "Design Browser 1"
+ 
+*** Message Type: info ***
+When: Wed Feb 25 12:04:31 IST 2026
+Exit XM-Sim: user
+      Design: worklib.clock_tb:sv
+   Languages: verilog assertion
+   Simulator: XM-Sim
+     Version: TOOL:      xmsim(64)       20.09-s012
+        User: student
+        Host: ECE.bmsce.ac.in
+Time Started: Wed Feb 25 12:02:17 IST 2026
+  Process ID: 9270
+   Directory: /home/student/cadWorkDir/myProjects/Digital/1BM23EC249/AAT2
+     Command: xrun -sv -access +rwc -gui -coverage all design_clock.sv interface_clock.sv program_clock.sv top.sv
+
+ 
+*** Message Type: error ***
+When: Wed Feb 25 12:04:31 IST 2026
+XM-Sim Crashed:
+      Design: worklib.clock_tb:sv
+   Languages: verilog assertion
+   Simulator: XM-Sim
+     Version: TOOL:      xmsim(64)       20.09-s012
+        User: student
+        Host: ECE.bmsce.ac.in
+Time Started: Wed Feb 25 12:02:17 IST 2026
+  Process ID: 9270
+   Directory: /home/student/cadWorkDir/myProjects/Digital/1BM23EC249/AAT2
+     Command: xrun -sv -access +rwc -gui -coverage all design_clock.sv interface_clock.sv program_clock.sv top.sv
+      Design: worklib.clock_tb:sv
+   Languages: verilog assertion
+   Simulator: XM-Sim
+     Version: TOOL:     xmsim(64)       20.09-s012
+        User: student
+        Host: ECE.bmsce.ac.in
+Time Started: Wed Feb 25 12:02:17 IST 2026
+  Process ID: 9270
+   Directory: /home/student/cadWorkDir/myProjects/Digital/1BM23EC249/AAT2
+     Command: xrun -sv -access +rwc -gui -coverage all design_clock.sv interface_clock.sv program_clock.sv top.sv
+
+Outstanding STRAP Requests:
+        strap::report enable out
+ 
+*** Message Type: info ***
+When: Wed Feb 25 12:04:40 IST 2026
+SimVision Exit.
+ 
